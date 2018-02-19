@@ -115,10 +115,10 @@
 								<td class="sheet-StatLabelSub" style="width:25%">Ranged</td>
 							</tr>
 							<tr>
-								<td class="sheet-StatInput"><input type="number" name="attr_Damage_Bonus_Infowar" style="width:20%"></input></td>
-								<td class="sheet-StatInput"><input type="number" name="attr_Damage_Bonus_Psywar"></input></td>
-								<td class="sheet-StatInput"><input type="number" name="attr_Damage_Bonus_Melee"></input></td>
-								<td class="sheet-StatInput"><input type="number" name="attr_Damage_Bonus_Ranged"></input></td>
+								<td class="sheet-StatInput"><span class="sheet-InputText">+</span><input type="number" name="attr_Damage_Bonus_Infowar" style="width:40%"></input><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /></td>
+								<td class="sheet-StatInput"><span class="sheet-InputText">+</span><input type="number" name="attr_Damage_Bonus_Psywar" style="width:40%"></input><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /></td>
+								<td class="sheet-StatInput"><span class="sheet-InputText">+</span><input type="number" name="attr_Damage_Bonus_Melee" style="width:40%"></input><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /></td>
+								<td class="sheet-StatInput"><span class="sheet-InputText">+</span><input type="number" name="attr_Damage_Bonus_Ranged" style="width:40%"></input><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /></td>
 							</tr>
 						</table>
 						<table style="width:30%">
@@ -938,9 +938,9 @@
 							</tr>
 							<tr>
 								<td class="sheet-StatInput"><input type="text" name="attr_Weapon_Range" /></td>
-								<td class="sheet-StatInput"><input type="text" name="attr_Weapon_Damage_Fixed" /></td>
-								<td class="sheet-StatInput" style="width:1%"><span style="font-size:18px;color:Black">+</span></td>
-								<td class="sheet-StatInput"><input type="text" name="attr_Weapon_Damage_Dice" /></td>
+								<td class="sheet-StatInput"><input type="text" name="attr_Weapon_Damage_Fixed"/></td>
+								<td class="sheet-StatInput" style="width:1%"><span class="sheet-InputText">+</span></td>
+								<td class="sheet-StatInput"><input type="text" name="attr_Weapon_Damage_Dice" style="width:50%"/><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /></td>
 								<td class="sheet-StatInput"><input type="text" name="attr_Weapon_Burst" /></td>
 								<td class="sheet-StatInput"><input type="text" name="attr_Weapon_Size" /></td>
 								<td class="sheet-StatInput"><input type="text" name="attr_Weapon_Ammo" /></td>
@@ -1111,9 +1111,9 @@
 							</td>
 							<td style="width:08%" class="sheet-StatInput"><input type="text" name="attr_Hacking_Program_Rating" /></td>
 							<td class="sheet-StatInput" style="width:15%"><input type="text" class="sheet-left" name="attr_Hacking_Program_Name" /></td>
-							<td class="sheet-StatInput" style="width:4%;border-right-style:none"><input type="text" name="attr_Hacking_Program_Damage_Fixed" /></td>
-							<td style="width:2%;background-color:white;text-align:center;border-left-style:none;border-right-style:none;"><span style="text-align:center;color:black">+</span></td>
-							<td class="sheet-StatInput" style="width:4%;border-left-style:none"><input type="text" name="attr_Hacking_Program_Damage_Dice" /></td>
+							<td class="sheet-StatInput" style="width:3%;border-right-style:none"><input type="text" name="attr_Hacking_Program_Damage_Fixed" /></td>
+							<td style="width:2%;background-color:white;text-align:center;border-left-style:none;border-right-style:none;"><span class="sheet-InputText">+</span></td>
+							<td class="sheet-StatInput" style="width:5%;border-left-style:none"><input type="text" name="attr_Hacking_Program_Damage_Dice" style="width:50%"/><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /></td>
 							<td class="sheet-StatInput" style="width:50%"><input type="text" name="attr_Hacking_Program_Qualities" /></td>
 							<td style="background-color:white;text-align:center;width:5%"><button type="roll" name="attr_Weapon_Infowar_Roll" value="&amp;{template:skillroll} {{character_name=@{character_name}}} {{header=@{Hacking_Program_Name} Attack}} {{subheader=Difficulty ?{Difficulty|1}}} {{skill=Hacking}} {{skill_EXP=@{Skill_Hacking_EXP}}} {{skill_FOC=@{Skill_Hacking_FOC}}} {{attribute=Intelligence, @{Intelligence}}} {{qualities=@{Hacking_Program_Qualities}}} {{roll=[[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range|1}]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC})),{2}}kl1,{0}}kh1]]?{Dice Pool|1d20, |2d20, + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]]|3d20, + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]] + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]]|4d20, + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]] + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]] + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]]|5d20, + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]] + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]] + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]] + [[{{ceil(([[@{Skill_Hacking_EXP}+@{Intelligence}]]-d20cs<[[@{Skill_Hacking_EXP}+@{Intelligence}]]cf<@{Skill_Hacking_FOC}cf>[[21-?{Complication Range&amp;#125;]]+1e-2)/([[@{Skill_Hacking_EXP}+@{Intelligence}]]-@{Skill_Hacking_FOC}))&amp;#44;{2&amp;#125;&amp;#125;kl1&amp;#44;{0&amp;#125;&amp;#125;kh1]]}}} {{damage_roll=[Roll Damage](!&#13;/em rolls damage for @{Hacking_Program_Name} &#13;/r ?{Fixed damage|@{Hacking_Program_Damage_Fixed}}+[[?{Variable damage|@{Hacking_Program_Damage_Dice}}+@{Damage_Bonus_Infowar}]]t[Combat-Dice])}}"></button></td>
 						</tr>
@@ -1570,8 +1570,8 @@
 						<tr>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Range" /></td>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Damage_Fixed" /></td>
-							<td class="sheet-StatInput" style="width:1%"><span style="font-size:18px;color:Black">+</span></td>
-							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Damage_Dice" /></td>
+							<td class="sheet-StatInput" style="width:1%"><span class="sheet-InputText">+</span></td>
+							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Damage_Dice" style="width:50%" /><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /></td>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Burst" /></td>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Ammo" /></td>
 						</tr>
@@ -1940,8 +1940,8 @@
 						<tr>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Range" /></td>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Damage_Fixed" /></td>
-							<td class="sheet-StatInput" style="width:1%"><span style="font-size:18px;color:Black">+</span></td>
-							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Damage_Dice" /></td>
+							<td class="sheet-StatInput" style="width:1%"><span class="sheet-InputText">+</span></td>
+							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Damage_Dice" style="width:50%"/><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /></td>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Burst" /></td>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Ammo" /></td>
 						</tr>
@@ -2040,7 +2040,7 @@
 					</tr>
 					<tr>
 						<td><input type="number" name="attr_Passengers_max" value="1" /></td>
-						<td style="text-align:center"><input style="width:20px" type="number" name="attr_Impact_Fixed" value="1" /><span>+</span><input style="width:20px" type="number" name="attr_Impact_Dice" value="1" /><span>N (</span><input style="width:65%" type="text" name="attr_Impact_Type" /><span>)</span></td>
+						<td style="text-align:center"><input style="width:20px" type="number" name="attr_Impact_Fixed" value="1" /><span>+</span><input style="width:20px" type="number" name="attr_Impact_Dice" value="1" /><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /><span> (</span><input style="width:65%" type="text" name="attr_Impact_Type" /><span>)</span></td>
 					</tr>
 				</table>
 				<table class="sheet-NPC">
@@ -2091,8 +2091,8 @@
 						<tr>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Range" /></td>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Damage_Fixed" /></td>
-							<td class="sheet-StatInput" style="width:1%"><span style="font-size:18px;color:Black">+</span></td>
-							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Damage_Dice" /></td>
+							<td class="sheet-StatInput" style="width:1%"><span class="sheet-InputText">+</span></td>
+							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Damage_Dice" style="width:50%" /><img class="sheet-icon-N-small" src="https://svgshare.com/i/5ZJ.svg" /></td>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Burst" /></td>
 							<td class="sheet-StatInput"><input type="text" name="attr_Attack_Ammo" /></td>
 						</tr>

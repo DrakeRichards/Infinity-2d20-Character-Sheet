@@ -212,6 +212,12 @@ input.sheet-left {
 	margin-bottom: 0px;
 }
 
+.sheet-InputText {
+  font-size: 14px;
+  color: black;
+  vertical-align: middle;
+}
+
 .sheet-SkillTable {
 	width: 100%;
 	text-align: center;
@@ -846,4 +852,10 @@ span.sheet-type-tab:hover {
 	border-width: 1px;
 	border-color: black;
 	font-family: Arial;	
+}
+
+.sheet-icon-N-small {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
 }
